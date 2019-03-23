@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import  firebase  from 'firebase';
 import { TabsPage } from '../pages/tabs/tabs';
-import { Login } from '../pages/login/login';
+import { LoginPage } from '../pages/login/login';
 
 /**firebase.initializeApp({
   apiKey: 'AIzaSyDNFW0LxMZeftMlZPxRpUpTZNqK12OmyQ8',
@@ -38,7 +38,7 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
        const unsubscribe = firebase.auth().onAuthStateChanged(user => {
       if (!user){
-        this.rootPage= "LoginPage";
+        this.rootPage= LoginPage;
         unsubscribe();
       } else {
         this.rootPage = TabsPage;

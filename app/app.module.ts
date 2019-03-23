@@ -8,6 +8,8 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
+import { AuthService } from '../providers/auth/auth.service';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { LoginPage } from '../pages/login/login';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -27,10 +30,13 @@ import { LoginPage } from '../pages/login/login';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    LoginPage
   ],
   providers: [
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    AuthService,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    
   ]
 })
 export class AppModule {}

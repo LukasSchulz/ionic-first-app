@@ -11,9 +11,9 @@ import { EmailValidator } from '../../validators/email';
 import { AuthService } from '../../providers/auth/auth.service';
 import { HomePage } from '../home/home';
 
-@IonicPage({
+/**@IonicPage({
   name: 'login'
-})
+})**/
 
 
 @Component({
