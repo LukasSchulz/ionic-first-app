@@ -10,6 +10,8 @@ import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { EmailValidator } from '../../validators/email';
 import { AuthService } from '../../providers/auth/auth.service';
 import { HomePage } from '../home/home';
+import { SignupPage } from '../../pages/signup/signup';
+import { ResetPasswordPage } from '../../pages/reset-password/reset-password';
 
 /**@IonicPage({
   name: 'login'
@@ -70,11 +72,11 @@ export class LoginPage {
 
 
   goToSignup(): void {
-    this.navCtrl.push('SignupPage');
+    this.navCtrl.push(SignupPage);
   }
 
   goToResetPassword(): void {
-    this.navCtrl.push('ResetPasswordPage');
+    this.navCtrl.push(ResetPasswordPage);
   }
 
 }

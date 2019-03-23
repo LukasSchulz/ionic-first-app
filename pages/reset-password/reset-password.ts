@@ -5,7 +5,7 @@ import { AuthService } from '../../providers/auth/auth.service';
 import { EmailValidator } from '../../validators/email';
 
 @IonicPage({
-  name: 'reset-password'
+  name: 'ResetPasswordPage'
 })
 @Component({
   selector: 'page-reset-password',

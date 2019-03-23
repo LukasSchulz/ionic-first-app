@@ -8,6 +8,8 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
+import { ResetPasswordPage } from '../pages/reset-password/reset-password';
 import { AuthService } from '../providers/auth/auth.service';
 
 
@@ -18,7 +20,9 @@ import { AuthService } from '../providers/auth/auth.service';
     ContactPage,
     HomePage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    SignupPage,
+    ResetPasswordPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,9 @@ import { AuthService } from '../providers/auth/auth.service';
     ContactPage,
     HomePage,
     TabsPage,
-    LoginPage
+    LoginPage,
+    SignupPage,
+    ResetPasswordPage
   ],
   providers: [
     AuthService,

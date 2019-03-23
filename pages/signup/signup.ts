@@ -10,7 +10,7 @@ import { EmailValidator } from '../../validators/email';
 import { HomePage } from '../home/home';
 
 @IonicPage({
-  name: 'signup'
+  name: 'SignupPage'
 })
 @Component({
   selector: 'page-signup',
