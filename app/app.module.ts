@@ -17,7 +17,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     TabsPage
   ],
   imports: [
-    BrowserModule,
+    //BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
