@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import  firebase  from 'firebase';
 import { TabsPage } from '../pages/tabs/tabs';
-import { LoginPage } from '../pages/login/login';
+import { Login } from '../pages/login/login';
 
 /**firebase.initializeApp({
   apiKey: 'AIzaSyDNFW0LxMZeftMlZPxRpUpTZNqK12OmyQ8',

@@ -1,17 +1,30 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content padding>
+  <form [formGroup]="loginForm" (submit)="loginUser()" novalidate>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
     <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
+      <ion-label stacked>Email</ion-label>
+      <ion-input formControlName="email" type="email" placeholder="Email Adresse"
+        [class.invalid]="!loginForm.controls.email.valid && blur"></ion-input>
     </ion-item>
-  </ion-list>
+
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input formControlName="password" type="password" placeholder="Passwort"
+        [class.invalid]="!loginForm.controls.password.valid && blur"></ion-input>
+    </ion-item>
+
+    <button ion-button block type="submit" [disabled]="!loginForm.valid">
+      Login
+    </button>
+
+  </form>
+
+  <button ion-button block clear (click)="goToSignup()">
+    Neuen Account erstellen
+  </button>
+
+  <button ion-button block clear (click)="goToResetPassword()">
+    Passwort vergessen?
+  </button>
+
 </ion-content>
